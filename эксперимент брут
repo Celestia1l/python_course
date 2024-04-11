@@ -1,0 +1,39 @@
+d8 = ['i', 'j', 't', 'y', 'u', 'w', 'q', 'n', 'i2', 'i3', 'i4', 'i5', 'i6', 'i7', 'i8', 'i9', 'j1', 'j2', 'j3', 'j4']
+x4=int(input())
+if len(d8)>x4:
+    k9=len(d8)-x4
+    m7=len(d8)-k9
+    while d8.index(<m7+1) in d8:
+        d8.pop(all(d8.index<m7+1))
+print(d8)
+def password_list(len: int, chars_list: str) -> list:
+    x4=int(input())
+    for i in chars_list:
+        for j in chars_list:
+            for t in chars_list:
+                for y in chars_list:
+                    for u in chars_list:
+                        for w in chars_list:
+                            for q in chars_list:
+                                for n in chars_list:
+                                    for i2 in chars_list:
+                                        for i3 in chars_list:
+                                            for i4 in chars_list:
+                                                for i5 in chars_list:
+                                                    for i6 in chars_list:
+                                                        for i7 in chars_list:
+                                                            for i8 in chars_list:
+                                                                for i9 in chars_list:
+                                                                    for j1 in chars_list:
+                                                                        for j2 in chars_list:
+                                                                            for j3 in chars_list:
+                                                                                for j4 in chars_list:
+                                                                                        d8 = [i, j, t, y, u, w, q, n, i2, i3, i4, i5, i6, i7, i8, i9, j1, j2, j3, j4]
+                                                                                        if len(d8)>x4:
+                                                                                            k9=len(d8)-x4
+                                                                                            m7=len(d8)-k9
+                                                                                            while d8.index()<m7+1 in d8:
+                                                                                                d8.pop(all(d8.index<m7+1))
+
+
+                                                                                        yield i + j + t + y + u + w + q + n
