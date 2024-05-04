@@ -46,7 +46,6 @@ def generatePass(i: int, l: int, chars: str) -> str:
     return ''.join(result[::-1])
 
 
-
 def generatePassList(l: int, chars: str) -> list:
     m = len(chars) ** l
     for i in range(m):
@@ -64,13 +63,16 @@ def generatePass(i: int, l: int, chars: str) -> str:
 
 k = 0
 t = time.time_ns()
+tc=2000
 for password in generatePassList(8, 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'):
-    #print(password)
+    # print(password)
     k += 1
     if send_request(password):
         print("OK")
         break
-    #else:
-        #print('FAIL')
-    if k % 10000 == 0:
-        print(t)
+    # else:
+    # print('FAIL')
+    if k % tc == 0:
+        print((time.time_ns() - t)/tc/1000)
+        t = time.time_ns()
+
