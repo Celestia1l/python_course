@@ -1,12 +1,9 @@
-def flick_switch(lst):
+def flick_switch(lst: list) -> list:
     a = []
     value = True
     for i in lst:
         if i == 'flick':
-            if value == True:
-                value = False
-            else:
-                value = True
+            value = not value
         a.append(value)
     return a
 
