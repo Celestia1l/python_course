@@ -47,7 +47,7 @@ class Motherboard:
 class Computer:
     button = 'on'
 
-    def __init__(self, video_card: VideoCard, processor: Processor, cooling_system: Cooling_system, motherboard):
+    def __init__(self, video_card: VideoCard, processor: Processor, cooling_system: Cooling_system, motherboard: Motherboard):
         self.video_card = video_card
         self.processor = processor
         self.cooling_system = cooling_system
