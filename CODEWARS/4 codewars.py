@@ -1,5 +1,5 @@
 def flick_switch(lst: list) -> list:
-    a = []
+    r = []
     value = True
     for i in lst:
         if i == 'flick':
