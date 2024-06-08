@@ -31,7 +31,7 @@ class Tiger(Animal):
     def __init__(self, color, weight, pattern):
         print('В конструкторе класса Tiger')
         super().__init__(color, weight)
-        self.stripe_pattern = pattern
+        self.pattern = pattern
 
 class Elephant(Animal):
     print('В классе Elephant')
