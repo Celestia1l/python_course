@@ -28,10 +28,10 @@ class Lion(Animal):
 class Tiger(Animal):
     print('В классе Tiger')
 
-    def __init__(self, color, weight, stripe_pattern):
+    def __init__(self, color, weight, pattern):
         print('В конструкторе класса Tiger')
         super().__init__(color, weight)
-        self.stripe_pattern = stripe_pattern
+        self.stripe_pattern = pattern
 
 class Elephant(Animal):
     print('В классе Elephant')
@@ -59,7 +59,7 @@ print(lion1.color, lion1.weight, lion1.mane_size)
 lion1.print()
 
 tiger1 = Tiger('Оранжевый', 300, 'полосатый')
-print(tiger1.color, tiger1.weight, tiger1.stripe_pattern)
+print(tiger1.color, tiger1.weight, tiger1.pattern)
 tiger1.print()
 
 elephant1 = Elephant('Серый', 5000, 120)
