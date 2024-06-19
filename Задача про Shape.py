@@ -1,4 +1,6 @@
 import math
+
+
 class Shape:
     def __init__(self, color):
         self.color = color
@@ -12,20 +14,27 @@ class Shape:
 
 class Rectangle(Shape):
 
-    def area(self, a: float, b: float) -> float :
-        return a * b
+    def __init__(self, a, b, color):
+        self.a = a
+        self.b = b
+        super().__init__(color)
+
+    def area(self) -> float:
+        return self.a * self.b
+
 
 class Circle(Shape):
-    def __init__(self, color):
+    def __init__(self, a, color):
+        self.a = a
         super().__init__(color)
-    def area(self, a: float):
-        s = a*a
+
+    def area(self):
+        s = self.a * self.a
         return s * math.pi
 
 
-Rectangle_1 = Rectangle
-print(Rectangle_1.area(5,5))
-Circle_1 = Circle('red')
+Rectangle_1 = Rectangle(5,3,'red')
+print(Rectangle_1.area())
+Circle_1 = Circle(6, 'red')
 print(Circle_1.get_color())
-print(Circle_1.area(5))
-
+print(Circle_1.area())
